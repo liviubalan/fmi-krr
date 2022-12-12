@@ -1,0 +1,140 @@
+TODO:
+https://www.youtube.com/watch?v=SykxWpFwMGs&ab_channel=DerekBanas
+https://www.youtube.com/watch?v=h9jLWM2lFr0&t=78s&ab_channel=TutorialsPoint
+https://www.youtube.com/watch?v=iIq7Vmda_l8&ab_channel=TutorialsPoint
+https://www.youtube.com/watch?v=x_APqarir-k&ab_channel=ThePowerofProlog
+https://www.youtube.com/watch?v=SwoZabsIzRg&ab_channel=ThePowerofProlog
+https://www.youtube.com/watch?v=fpqlb0se-7Q&ab_channel=MyCyberAcademy
+https://www.youtube.com/watch?v=360AHAy8U-E&ab_channel=WadeHuber
+
+prolog
+halt.
+[db].
+consult('db.pl').
+listing.
+
+write('Hello world'), nl,
+write('Let\'s program').
+
+loves(romeo, juliet).
+loves(romeo, X).
+
+female(alice).
+listing(male).
+male(X).
+male(X), female(Y).
+
+runs(albert).
+dances(alice).
+
+does_alice_dance.
+
+female(X).
+parent(X, bob).
+parent(X, bob), dances(X).
+parent(Y, carl), parent(X, Y).
+
+parent(X, carl), parent(X, charlie).
+get_grandparent.
+parent(X, carl), brother(X, Y).
+
+grand_parent(carl, A).
+blushes(derek).
+hates(romeo, X).
+
+male(X).
+male(_).
+
+what_grade(5).
+what_grade(10).
+
+owns(albert, pet(cat, X)).
+customer(sally,_,Bal).
+get_cust_bal(sally, smith).
+vertical(line(point(5, 10), point(5, 20))).
+horizontal(line(point(10, 20), point(30, 20))).
+vertical(line(point(5, 10), point(X, 20))).
+vertical(line(point(5, 10), X)).
+
+alice = alice.
+'alice' = alice.
+\+ (alice = albert).
+3 > 15.
+3 >= 15.
+3 =< 15.
+W = alice.
+Rand1 = Rand2.
+rich(money, X) = rich(Y, no_debt).
+
+trace.
+mammal(human).
+mammal(penguin).
+notrace.
+warm_blooded(X), produce_milk(X), write(X),nl.
+
+related(albert, bob).
+related(albert,carl).
+parent(albert, Z).
+related(Z, carl).
+
+X is 2 + 2.
+X is 3 + (2 * 10).
+50 > 30.
+(3*10) >= (50/2).
+\+ (3 = 10).
+5+4 =:= 4+5. 
+5+4 =\= 4+5.
+5 > 10 ; 10 < 100.
+X is mod(7,2).
+double_digit(4,Y).
+random(0,10,X).
+between(0,10,X).
+succ(2,X).
+X is abs(-8).
+X is max(10,5).
+X is min(10,5).
+X is round(10.56).
+X is truncate(10.56).
+X is floor(10.56).
+X is ceiling(10.56).
+X is 2** 3.
+% sqrt, sin, cos, tan, asin, acos, atan, atan2, sinh, cosh, tanh, 
+% asinh, acosh, atanh, log, log10, exp, pi, e
+
+write('You saw me'), nl.
+writeq('I show quotes'), nl.
+say_hi.
+
+write_to_file('a.txt', 'test').
+read_file('a.txt').
+
+count_to_10(2).
+
+listing(friend).
+assertz(friend(benvolio, mercutio)).
+listing(friend).
+asserta(friend(mercutio, benvolio)).
+listing(friend).
+retract(likes(mercutio,dancing)).
+listing(likes).
+retractall(father(_,_)).
+listing(father).
+retractall(likes(_,dancing)).
+
+write([albert|[alice, bob]]), nl.
+length([1,2,3], X).
+[H|T] = [a,b,c]. 
+[X1, X2, X3, X4|T] = [a,b,c,d].
+[_, X2, _, _|T] = [a,b,c,d].
+[_, _, [X|Y], _, Z|T] = [a, b, [c, d, e], f, g, h].
+List1 = [a,b,c].
+member(a, List1).
+member(X, [a, b, c, d]).
+reverse([1,2,3,4,5], X).
+append([1,2,3], [4,5,6], X).
+write_list([1,2,3,4,5]).
+
+name('A random string', X).
+name(X, [65,32,114,97,110,100,111,109,32,115,116,114,105,110,103]).
+join_str('Hello', ' world', X).
+atom_length('Derek',X).
